@@ -1,0 +1,4 @@
+c:\users\avery\documents\visual studio 2017\Projects\KickOnDeath\KickOnDeath\bin\Release\KickOnDeath.dll
+c:\users\avery\documents\visual studio 2017\Projects\KickOnDeath\KickOnDeath\bin\Release\KickOnDeath.pdb
+c:\users\avery\documents\visual studio 2017\Projects\KickOnDeath\KickOnDeath\obj\Release\KickOnDeath.dll
+c:\users\avery\documents\visual studio 2017\Projects\KickOnDeath\KickOnDeath\obj\Release\KickOnDeath.pdb
