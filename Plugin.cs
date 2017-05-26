@@ -37,9 +37,10 @@ namespace KickOnDeath
         }
         public IEnumerator DeathKick(UnturnedPlayer player)
         {
-            if(Configuration.Instance.WaitTime >= 0f)
+            if(Configuration.Instance.WaitTime <= 0f)
             {
                 yield return new WaitForSeconds(1f);
+                player.Kick(Configuration.Instance.KickReason);
             }
             else
             {
