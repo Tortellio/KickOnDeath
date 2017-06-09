@@ -13,8 +13,12 @@ namespace KickOnDeath
     {
         public string KickReason;
         public float WaitTime;
+        public bool KickForAnyDeath;
+        public bool KickOnSucide;
         public void LoadDefaults()
         {
+            KickForAnyDeath = true;
+            KickOnSucide = false;
             KickReason = "You died!";
             WaitTime = 2;
         }

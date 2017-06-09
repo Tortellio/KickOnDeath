@@ -11,6 +11,7 @@ using Rocket.API.Collections;
 using System.Timers;
 using Rocket.Unturned.Events;
 using System.Collections;
+using Rocket.API;
 
 namespace KickOnDeath
 {
@@ -33,11 +34,26 @@ namespace KickOnDeath
         }
         private void UnturnedPlayerEvents_OnPlayerDeath(UnturnedPlayer player, SDG.Unturned.EDeathCause cause, SDG.Unturned.ELimb limb, CSteamID murderer)
         {
-            StartCoroutine(DeathKick(player));
+            if (Configuration.Instance.KickForAnyDeath)
+            {
+                StartCoroutine(DeathKick(player));
+            }
+            if (Configuration.Instance.KickOnSucide)
+            {
+                if(cause.ToString() == "SUCIDE")
+                {
+                    StartCoroutine(DeathKick(player));
+                }
+            }
+            
         }
         public IEnumerator DeathKick(UnturnedPlayer player)
         {
-            if(Configuration.Instance.WaitTime <= 0f)
+            if (player.HasPermission("kick.ignore"))
+            {
+                yield break;
+            }
+            else if(Configuration.Instance.WaitTime <= 0f)
             {
                 yield return new WaitForSeconds(1f);
                 player.Kick(Configuration.Instance.KickReason);
