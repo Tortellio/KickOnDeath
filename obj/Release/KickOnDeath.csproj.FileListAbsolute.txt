@@ -2,3 +2,9 @@ c:\users\avery\documents\visual studio 2017\Projects\KickOnDeath\KickOnDeath\bin
 c:\users\avery\documents\visual studio 2017\Projects\KickOnDeath\KickOnDeath\bin\Release\KickOnDeath.pdb
 c:\users\avery\documents\visual studio 2017\Projects\KickOnDeath\KickOnDeath\obj\Release\KickOnDeath.dll
 c:\users\avery\documents\visual studio 2017\Projects\KickOnDeath\KickOnDeath\obj\Release\KickOnDeath.pdb
+C:\Users\irfan\Documents\GitHub\KickOnDeath\bin\Release\KickOnDeath.dll
+C:\Users\irfan\Documents\GitHub\KickOnDeath\bin\Release\KickOnDeath.pdb
+C:\Users\irfan\Documents\GitHub\KickOnDeath\obj\Release\KickOnDeath.csprojAssemblyReference.cache
+C:\Users\irfan\Documents\GitHub\KickOnDeath\obj\Release\KickOnDeath.csproj.CoreCompileInputs.cache
+C:\Users\irfan\Documents\GitHub\KickOnDeath\obj\Release\KickOnDeath.dll
+C:\Users\irfan\Documents\GitHub\KickOnDeath\obj\Release\KickOnDeath.pdb
